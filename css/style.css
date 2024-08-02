@@ -1,0 +1,274 @@
+body{
+    background-color:  rgb(139, 40, 40);
+   
+}
+.studentdetails{
+    width: 270px;
+    height: 515px;
+    background-color: white;
+    padding: 10px;
+}
+.col21{
+    display: flex;
+    background-color: white;
+}
+.practical1{
+    margin-left: 40px;
+
+}
+.container1{
+    display: flex;
+    background-color:  rgb(255, 255, 150);
+    height: 700px;
+}
+input{
+    width: 250px;
+    height: 30px;
+}
+button{
+    padding: 20px;
+    margin-top: 20px;
+    margin-left:200px ;
+    font-size: larger;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(139, 40, 40);
+}
+.container{
+    width: 905px;
+    height: 1330px;
+    border: 4px solid white  ;
+    background-color: rgb(255, 255, 150);
+    padding: 30px;
+    margin-left: 200px;
+    margin-top: 30px;
+    
+}
+.section{
+    display: block;
+   
+}
+.red{
+    color: rgb(139, 40, 40);
+}
+.sect1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#QR{
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+}
+#logo{
+    width: 150px;
+    height: 150px;
+    
+}
+.clgdetails{
+    text-align: center;
+    display: block;
+}
+#td11{
+    width: 450px;
+    height: 100px;
+    text-align: center;
+}
+#table1{
+    border-collapse: collapse;
+    background-color: white;
+
+}
+#td12{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 450px;
+    border-right: 0px;
+    border-top: 0px;
+}
+#td121{
+    text-align: center;
+    width: 225px;
+    border-right: 2px solid black;
+}
+#td122{
+    text-align: center;
+    width: 225px;
+}
+td{
+    border: 2px solid black;
+}
+#table2{
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: white;
+    /* width: 900px; */
+}
+
+#th21{
+    border-right:0px;
+    width: 100px;
+    text-align: center;
+    height: 80px;
+}
+#td21{
+    border-right:0px;
+    width: 100px;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+    height: 40px;
+}
+
+#tdl21{
+    border-right:0px;
+    width: 100px;
+    text-align: center;
+    border-top: 0px;
+    height: 40px;
+}
+#th22{
+    border-left:0px ;
+    width: 350px;
+    text-align: center;
+}
+#td22{
+    border-left:0px ;
+    width: 275px;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+#tdl22{
+    border-left:0px ;
+    width: 275px;
+    text-align: center;
+    border-top: 0px;
+}
+#th23{
+    width: 75px;
+    text-align: center;
+}
+#td23{
+    width: 75px;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+#tdl23{
+    width: 75px;
+    text-align: center;
+    border-top: 0px;
+}
+.tdrow1{
+    height: 40px;
+    text-align: center;
+}
+.tdrow2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    border-top: 2px solid black;
+    height: 40px;
+    width: 200px;
+}
+.tdcol1,.tdcol2{
+    border-right: 2px solid black;
+}
+.tdcol1,.tdcol2,.tdcol3{
+    width: 67px;
+    padding: 10px;
+}
+#th24{
+    width: 200px;
+    text-align: center;
+}
+#td24{
+    display: flex;
+    border:0px;
+    width: 200px;
+    height: 40px;
+}
+#tdl24{
+    display: flex;
+    border:0px;
+    width: 200px;
+    height: 40px;
+}
+#th25{
+    width:167px ;
+    text-align: center;
+}
+#td25{
+    width:167px ;
+    text-align: center;
+    border-bottom: 0px;
+    border-top: 0px;
+}
+#tdl25{
+    width:167px ;
+    text-align: center;
+    border-top: 0px;
+}
+#td21gt{
+    border-right: 0px;
+}
+#t1,#t2,#t3{
+    border-left: 0px;
+    border-right: 0px;
+}
+#t4{
+    border-left: 0px;
+}
+#table3{
+    border-collapse: collapse;
+    margin-top: 0px;
+    background-color: white;
+}
+#td111{
+    width: 350px;
+    height: 50px;
+    border-top: 0px;
+    text-align: center;
+}
+#td112{
+    width: 200px;
+    border-top: 0px;
+    text-align: center;
+}
+#td113{
+    width: 100px;
+    border-top: 0px;
+    text-align: center;
+}
+#td114{
+    width: 125px;
+    border-top: 0px;
+    text-align: center;
+}
+#td115{
+    width: 116px;
+    border-top: 0px;
+    text-align: center;
+}
+.final{
+    display: flex;
+    justify-content: space-between;
+}
+.end{
+    text-align: center;
+}
+.theory{
+    margin-left: 40px;
+    margin-top: -5px;
+}
+.practical{
+    margin-left:40px;
+    margin-top: -5px;
+}
+.total{
+    margin-left: 50px;
+    margin-top: -5px;
+}

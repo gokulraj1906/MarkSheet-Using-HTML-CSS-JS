@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body><div><h1 style="text-align: center;color: white;">Mark Sheet Generator</h1>
+    <div class="container1">
+        <div class="studentdetails" style="margin-top: 65px;margin-left: 30px;">
+            <h3>Student details</h3>
+            <label>Student Name:</label><br>
+            <input type="text" id="sname" required><br>
+            <label>Reg No:</label><br>
+            <input type="number" id="sregno" required><br>
+            <label>Enrollment no:</label><br>
+            <input type="number" id="senrolno" required><br>
+            <label>Course Name - code:</label><br>
+            <input type="text" id="scourse" required><br>
+        </div>
+        <div class="col2">
+            <h2 style="margin-left: 250px;">Student Mark Details</h2>
+            <div class="col21">
+            <div class="theory1" style="margin-bottom: 10px;">
+            <h3>Theory</h3>
+            <h4>Java Programming</h4> 
+            <label>External</label>
+            <input id="esub1" type="number" required>
+            <label>Internal</label>
+            <input id="isub1" type="number" required>
+            
+            <h4>Software Engineering</h4> 
+            <label>External</label>
+            <input id="esub2" type="number" required>
+            <label>Internal</label>
+            <input id="isub2" type="number" required>
+            <h4>Operation System</h4> 
+            <label>External</label>
+            <input id="esub3" type="number" required>
+            <label>Internal</label>
+            <input id="isub3" type="number" required>
+            <h4>Probability and Statistics</h4> 
+            <label>External</label>
+            <input id="esub4" type="number" required>
+            <label>Internal</label>
+            <input id="isub4" type="number" required>
+            <h4>Design and Analysis of Algorithm</h4> 
+            <label>External</label>
+            <input id="esub5" type="number" required>
+            <label>Internal</label>
+            <input id="isub5" type="number" required>
+            </div>
+            <div class="practical1" style="margin-right: 10px;">
+            <h3>Practical</h3>
+            <h4>Java Programming Laborarty</h4>
+            <label>Internal</label>
+            <input id="isub6" type="number">
+            <h4>Operating System Laborarty</h4>
+            <label>Internal</label>
+            <input id="isub7" type="number">
+            <h4>Data Structure Laboraty</h4>
+            <label>Internal</label>
+            <input id="isub8" type="number">
+            </div>
+            </div>
+             <a><button  onclick="generateMarksheet()" >Generate Mark Sheet</button></a>
+        </div>
+
+    </div>
+   
+
+</div><!--endofinput-->
+    <div class="container">
+        <div class="section">
+            <!--section1-->
+            <div class="sect1">
+                <h4>Sr.No.000000</h4>
+                <img id="logo" src="assets/logo.jpg">
+                <img id="QR" src="assets/QR code.png">
+            </div>
+            <div class="clgdetails">
+                <h1 class="clgname red " >HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+                <h4 class="clgdetails">An Autonomous institution recognized by Government of India</h4>
+                <h1>Annual Statements of Marks</h1>
+            </div>
+            <!--section2-->
+            <div class="sect2">
+            <table id="table1">
+                <tr id="tr11">
+                    <td id="td11">
+                        <p class="red">Name of the Candiate</p>
+                        <h4 id="name">GOKUL RAJ G</h4>
+                    </td>
+                    <td id="td11">
+                        <p class="red">Course name with Code</p>
+                        <h4 id="coursecodename">Computer Science Engineering-104</h4>
+                    </td>
+                </tr>
+                <tr id="tr12">
+                    <td id="td12">
+                        <div id="td121">
+                        <p class="red">Reg.no</p>
+                        <h4 id="regno">720721104079</h4>
+                        </div>
+                        <div id="td122">
+                        <p class="red" >Enrollment No.</p>
+                        <h4 id="enrno">641032</h4>
+                        </div>
+                    </td>
+                    <td id="td11">
+                        <p class="red">Authorised Training Centre Name with Code</p>
+                        <h4>HICET(7207)</h4>
+                    </td>
+                </tr>
+
+            </table>
+            <table id="table2">
+                    <tr id="tr21">
+                        <td id="th21" class="red">Subject Code</td>
+                        <td id="th22" class="red">Subject Name</td>
+                        <td id="th23" class="red">Max. Marks</td>
+                        <td id="th24">
+                            <div class="tdrow1 red" >Marks Obtained in Figures</div>
+                            <div class="tdrow2" >
+                                <div class="tdcol1 red" >
+                                    Theory
+                                </div>
+                                <div class="tdcol2 red">
+                                    Practical
+                                </div>
+                                <div class="tdcol3 red" >
+                                    Total
+                                </div>
+                            </div>
+                        </td>
+                        <td id="th25" class="red">
+                            Total in Words
+                        </td>
+                    </tr>
+                    <tr id="tr22">
+                        <td id="td21">21CS4201</td>
+                        <td id="td22">JAVA PROGRAMMING</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory1"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical1"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total1"></p>
+                            </div>
+                        </td>
+                        <td id="td25"></td>
+                    </tr>
+                    <tr id="tr23">
+                        <td id="td21">21CS4202</td>
+                        <td id="td22">SOFTWARE ENGINEERING</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory2"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical2"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total2"></p>
+                            </div>
+                        </td>
+                        <td id="td25"></td>
+                    </tr>
+                    <tr id="tr24">
+                        <td id="td21">21CS4203</td>
+                        <td id="td22">OPERATING SYSTEMS</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory3"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical3"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total3"></p>
+                            </div>
+                        </td>
+                        <td id="td25"></td>
+                    </tr>
+                    <tr id="tr25">
+                        <td id="td21">21MA4151</td>
+                        <td id="td22">PROBABILITY AND STATISTICS</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory4"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical4"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total4"></p>
+                            </div>
+                        </td>
+                        <td id="td25"></td>
+                    </tr>
+                    <tr id="tr26">
+                        <td id="td21">21CS4251</td>
+                        <td id="td22">DESIGN AND ANALYSIS OF ALGORITHM</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory5"></p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical5"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total5"></p>
+                            </div>
+                        </td>
+                        <td id="td25"></td>
+                    </tr>
+                    <tr id="7">
+                        <td id="td21">21CS4001</td>
+                        <td id="td22">JAVA PROGRAMMING LABORATORY</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory6">X</p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical6"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total6"></p>
+                            </div>
+                        </td>
+                        <td id="td25"></td>
+                    </tr>
+                    <tr id="tr28">
+                        <td id="td21">21CS4002</td>
+                        <td id="td22">OPERATING SYSTEMS LABORATORY</td>
+                        <td id="td23">100</td>
+                        <td id="td24">
+                            <div class="theory">
+                                <p id="theory7">X</p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical7"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total7"></p>
+                            </div>
+                        </td>
+                        <td id="td25"></td>
+                    </tr>
+                    <tr id="tr29">
+                        <td id="tdl21">21CS5002</td>
+                        <td id="tdl22">DATA STRUCTURES LABORATORY</td>
+                        <td id="tdl23">100</td>
+                        <td id="tdl24">
+                            <div class="theory">
+                                <p id="theory8">X</p>
+                            </div>
+                            <div class="practical">
+                                <p id="practical8"></p>
+                            </div>
+                            <div class="total">
+                                <p id="total8"></p>
+                            </div>
+                        </td>
+                        <td id="tdl25"></td>
+                    </tr>
+                    <tr id="tr210">
+                        <td id="td21gt">
+                            <p class="red">Grand Total</p>
+                            <p class="red">In Words</p>
+                        </td>
+                        <td id="t1">
+                            <div class="grandtotal">
+                                <p id="GT"></p>
+                            </div>
+                            <div class="gtwords">
+                                <p id="GTwords"></p>
+                            </div>
+                        </td>
+                        <td id="t2"></td>
+                        <td id="t3"></td>
+                        <td id="t4"></td>
+                    </tr>
+                </table>
+                <table id="table3">
+                    <tr id="tr211">
+                        <td id="td111" class="red">Month and Year of Examination</td>
+                        <td id="td112" class="red">No of Subjects Offered</td>
+                        <td id="td113" class="red">Result</td>
+                        <td id="td114" class="red">Percentage</td>
+                        <td id="td115" class="red">Grade</td>
+                    </tr>
+                    <tr id="tr212">
+                        <td id="td111">May 2020</td>
+                        <td id="td112">T5+O3=8</td>
+                        <td id="td113"><div class="result"></div></td>
+                        <td id="td114"><div class="percentage"></div></td>
+                        <td id="td115"><div class="grade"></div></td>
+                    </tr>
+                </table>
+            </div>
+            <!--section3-->
+            <div class="final">
+                <h4>Date:<span id="livedate"></span></h4>
+                <h4>Deputy Controller of examination</h4>
+            </div>
+            <div class="end red">
+                <h4>Subject mark with * indicates Exemption</h4>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
